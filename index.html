@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/a5ee39e432.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;0,700;0,900;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Love Maths</title>
+</head>
+<body>
+
+    <h1 class="heading">
+        <i class="logo fas fa-calculator"></i> Love Maths
+    </h1>
+
+    <div class="game-area">
+
+        <div class="controls">
+            <button class="btn btn-controls btn-green">
+                <i class="fas fa-plus"></i>
+            </button>
+            <button class="btn btn-controls btn-blue">
+                <i class="fas fa-minus"></i>
+            </button>
+            <button class="btn btn-controls btn-orange">
+                <i class="fas fa-times"></i>
+            </button>
+            <button class="btn btn-controls btn-red">
+                <i class="fas fas fa-divide"></i>
+            </button>
+        </div>
+
+        <div class="display">
+            <span id="operand1">0</span>
+            <span id="operator">+</span>
+            <span id="operand2">0</span>
+            <span id="equal">=</span>
+            <input type="number" id="answer-box">
+        </div>
+
+        <button class="btn btn-submit" data-type="submit">Submit Answer</button>
+
+    </div>
+
+    <div class="scrore">
+        <p class="right-answer">Correct Answer <span>0</span></p>
+        <p class="wrong-answer">Incorrect Answer <span>0</span></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
