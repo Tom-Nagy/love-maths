@@ -1,3 +1,160 @@
 body {
     font-family: 'Poppins', sans-serif;
+    text-align: center;
+}
+
+.logo {
+
+}
+
+.heading {
+    font-size: 2rem;
+    padding: 1em;
+}
+
+.game-area {
+    width: 60%;
+    max-width: 660px;
+    background-color: rgb(29, 5, 5);
+    padding: 2em;
+    display: grid;
+    justify-content: center;
+    margin: 1em auto;
+    border-radius: 25px;
+}
+
+/* --------------------  Buttons */
+
+.controls {
+    padding: 1em;
+}
+
+.btn {
+    padding: 1em;
+    font-size: 1rem;
+    text-align: center;
+    margin: 1em;
+}
+
+.btn:focus {
+    outline: none;
+}
+
+/* -------------------- Controls Buttons */
+
+.btn-controls {
+    position: relative;
+    height: 66px;
+    width: 66px;
+    border-radius: 50%;
+    background-color: white;
+    color: black;
+    box-sizing: border-box;
+    border: 6px solid;
+    transition-duration: 250ms;
+    transition-property: background, transform;
+    transition-timing-function: ease-in-out;
+}
+
+.btn-green {
+    color: green;
+    border-color: darkgreen;
+}
+
+.btn-green:active,
+.btn-green:hover {
+    background-color: darkgreen;
+    border-color: green;
+    color: white;
+    transform: rotate(360deg);
+}
+
+.btn-blue {
+    color: blue;
+    border-color: darkblue;
+}
+
+.btn-blue:active,
+.btn-blue:hover {
+    background-color: darkblue;
+    border-color: blue;
+    color: white;
+    transform: rotate(360deg);
+}
+
+.btn-orange {
+    color: orange;
+    border-color: orangered;
+}
+
+.btn-orange:active,
+.btn-orange:hover {
+    background-color: orangered;
+    border-color: orange;
+    color: white;
+    transform: rotate(360deg);
+}
+
+.btn-red {
+    color: red;
+    border-color: darkred;
+}
+
+.btn-red:active,
+.btn-red:hover {
+    background-color: darkred;
+    border-color: red;
+    color: white;
+    transform: rotate(360deg);
+}
+
+.btn-controls::after {
+    content: attr(data-type);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 200%);
+}
+
+/* ---------------- Display */
+
+.display {
+    padding: 1em;
+    color: white;
+    font-size: 1.5rem;
+
+}
+
+#answer-box {
+    width: 10ch;
+    min-height: 2rem;
+    border-radius: 10px;
+}
+
+/* -------------------------------  Submit Button */
+
+.btn-submit {
+    width: fit-content;
+    margin: 0 auto;
+    font-size: 0.8rem;
+    font-weight: 900;
+    padding: 0.5em;
+    background-color: cadetblue;
+}
+
+/* -------------------------------  Score */
+
+.score p {
+    display: inline-block;
+    padding: 1em;
+    font-size: 1rem;
+    margin: 0;
+}
+
+#right-answer {
+    color: green;
+}
+
+#wrong-answer {
+    color: red;
 }
