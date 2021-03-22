@@ -109,6 +109,8 @@ body {
 }
 
 .btn-controls::after {
+    display: inline-block;
+    padding: 1px;
     content: attr(data-type);
     position: absolute;
     top: 50%;
@@ -157,4 +159,30 @@ body {
 
 #wrong-answer {
     color: red;
+}
+
+/* -------------------------------  Media queries */
+
+@media(max-width: 425px) {
+    .heading {
+        padding: 0.3em;
+        margin: 0;
+    }
+
+    .game-area {
+        width: 80%;
+        padding: 1em;
+    }
+
+    .btn-submit {
+        font-size: 0.6rem;
+    }
+
+    .btn-controls {
+        padding: 0.5em;
+    }
+
+    .score p {
+        padding: 0.2em;;
+    }
 }
